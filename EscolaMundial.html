@@ -8,120 +8,141 @@
     <title>Escola Mundial</title>
 </head>
 <body>
-    <!-- vou modificar um pouco da ideia do Gabriel para o começo, fiquem a vontade para mudarem -->
-    <header>
-        <ul class="opcaoDoUsuario">
-            <li><a href="#">Estudante</a></li>
-            <li><a href="#">Área dos Pais</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Matricula</a></li>
-        </ul>
-        <img src="https://payload.cargocollective.com/1/8/264759/5939318/prt_1373066429.jpg" alt="Escola Mundial" width="50" height="50">
-    <nav class="setores">
-        <a href="#">Home</a>
-        <a href="#">Admissão</a>
-        <a href="#">Calendario</a>
-        <a href="#">Professores</a>
-        <a href="#">Galeria</a>
-        <a href="#">Comunicados</a>
-        <a href="#">Carreira</a>
-        <a href="#">Sobre nós</a>
-    </nav>
-    </header>
 
-    <section class="banner">
-        <div class="banner-slider">
-            <p>Banner</p>
-            <p>O José sempre esteve certo (Seria bacana colocar uma imagem aqui que desse para girar para o lado)</p>
-            <img src="banner" alt="Banner" width="200px">
-
-            <div class="Comunicados">
-                <h3>Comunicados e Notícias</h3>
-                <ul>
-                    <li>José ataca novamente</li>
-                    <li>Cirilo</li>
-                    <li>Provas para próxima semana</li>
+<!-- Cabeçalho -->
+<header>
+    <nav class="navbar is-light">
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <ul class="navbar-item">
+                    <li><a href="#">Estudante</a></li>
+                    <li><a href="#">Área dos Pais</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Matricula</a></li>
                 </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Logo abaixo da navbar -->
+    <div class="has-text-centered" style="padding: 20px;">
+        <img src="https://payload.cargocollective.com/1/8/264759/5939318/prt_1373066429.jpg" alt="Escola Mundial" width="50" height="50" id="logo">
+    </div>
+
+    <nav class="navbar is-primary">
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a href="#" class="navbar-item">Home</a>
+                <a href="#" class="navbar-item">Admissão</a>
+                <a href="#" class="navbar-item">Calendário</a>
+                <a href="#" class="navbar-item">Professores</a>
+                <a href="#" class="navbar-item">Galeria</a>
+                <a href="#" class="navbar-item">Comunicados</a>
+                <a href="#" class="navbar-item">Carreira</a>
+                <a href="#" class="navbar-item">Sobre Nós</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <!-- Banner e Comunicados -->
+    <section class="section">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <div class="box">
+                    <h2 class="title">Banner</h2>
+                    <p>O José sempre esteve certo (Seria bacana colocar uma imagem aqui que desse para girar para o lado)</p>
+                    <img src="banner.jpg" alt="Banner" width="100%">
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <h3 class="title is-4">Comunicados e Notícias</h3>
+                    <ul>
+                        <li>José ataca novamente</li>
+                        <li>Cirilo</li>
+                        <li>Provas para próxima semana</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="boasvindas">
-        <div id="boasvindas-texto">
-            <h2>Seja Bem-vindo!</h2>
-            <p>Texto de boas-vindas da escola.</p>
-        </div>
-        <aside id="redes-sociais">
-            <h3>Redes Sociais da Escola</h3>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
-        </aside>
-    </section>
-    <!-- Lembrei da ideia do Gabriel de colocar a imagem dos alunos, acho que ficaria bacana aqui não sei -->
-    <section class="clubes"></section>
-        <h3>Alunos ou clubes (decidam entre vocês o que colocar aqui)</h3>
-        <div class="clube">
-            <h4>Clube do Livro ou Maria Joaquina</h4>
-            <p>a</p>
-        </div>
-        <div class="clube">
-            <h4>Clube da luta ou Cirilo</h4>
-            <p>b</p>
-        </div>
-        <div class="clube">
-            <h4>clube de esportes ou Jaime</h4>
-            <p>c</p>
-        </div>
-        <div class="clube">
-            <h4>Clube aleatorio ou Professora Elena</h4>
-            <p>d</p>
-        </div>
-        <div class="clube">
-            <h4>Fiquei sem ideia</h4>
-            <p>clube sem ideia</p>
-        </div>
-    </section>
-    <section class="blog-galeria-calendario">
-        <div class="blog">
-            <h3>Blog</h3>
-            <p>Fofocas sobre a sala</p>
-        </div>
-        <div class="galeria-fotos">
-            <h3>Galeria de Fotos</h3>
-            <p>Seria bacana colocar umas fotos de carrosel aqui</p>
-        </div>
-        <div class="Calendaria-Escolar">
-            <h3>Calendario Escolar</h3>
-            <p>Datas e Eventos importantes</p>
-            <img src="https://cdn-icons-png.flaticon.com/512/42/42288.png" alt="Calendario" width="100" height="100">
+    <!-- Boas-vindas e Redes Sociais -->
+    <section class="section">
+        <div class="columns">
+            <div class="column is-three-quarters">
+                <h2 class="title">Seja Bem-vindo!</h2>
+                <p>Texto de boas-vindas da escola.</p>
+            </div>
+            <div class="column">
+                <aside class="box">
+                    <h3 class="title is-4">Redes Sociais</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </aside>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="informacao">
-            <h3>Escola Mundial</h3>
-            <img src="" alt="logo da escola">
-            <p>Uma frase da escola aqui</p>
+    <!-- Clube dos Alunos -->
+    <section class="section">
+        <h3 class="title is-4">Clubes dos Alunos</h3>
+        <div class="columns is-multiline">
+            <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="title is-5">Clube do Livro</h4>
+                        <p>a</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="title is-5">Clube da Luta</h4>
+                        <p>b</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicionar outros clubes da mesma forma -->
         </div>
-        <div class="link-footer"></div>
-            <a href="#">Admissão</a>
-            <a href="#">Calendario</a>
-            <a href="#">Professores</a>
-            <a href="#">Galeria</a>
-            <a href="#">Comunicados</a>
+    </section>
+
+    <!-- Blog, Galeria e Calendário Escolar -->
+    <section class="section">
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <h3 class="title">Blog</h3>
+                    <p>Fofocas sobre a sala.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <h3 class="title">Galeria de Fotos</h3>
+                    <p>Seria bacana colocar umas fotos de carrossel aqui.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <h3 class="title">Calendário Escolar</h3>
+                    <p>Datas e Eventos importantes.</p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/42/42288.png" alt="Calendário" width="100">
+                </div>
+            </div>
         </div>
-        <div class="footer-links">
-            <a href="#">Estudantes</a>
-            <a href="#">Area dos Pais</a>
-            <a href="#">Mátricula Online</a>
-        </div>
-        <div class="contatos">
-            <p>Rua do Carrossel</p>
-            <p>Telefone: 9999-9999</p>
-            <p>Email: escolamundialcarrosel@yahoo.com.br</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p><strong>Escola Mundial</strong></p>
+            <p>Rua do Carrossel, Telefone: 9999-9999, Email: escolamundialcarrosel@yahoo.com.br</p>
         </div>
     </footer>
 </body>
