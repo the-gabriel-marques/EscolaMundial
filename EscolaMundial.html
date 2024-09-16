@@ -3,59 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Escola Mundial</title>
 </head>
 <body>
     <!-- vou modificar um pouco da ideia do Gabriel para o começo, fiquem a vontade para mudarem -->
     <header>
-        <div class="teste">
-            <img src="https://payload.cargocollective.com/1/8/264759/5939318/prt_1373066429.jpg" alt="Escola Mundial" width="50" height="50">
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Admissão</a>
-            <a href="#">Calendario</a>
-            <a href="#">Professores</a>
-            <a href="#">Galeria</a>
-            <a href="#">Comunicados</a>
-            <a href="#">Carreira</a>
-            <a href="#">Sobre nós</a>
-        </nav>
-        <div class="OpcaoDoUsuario">
-            <a href="#">Estudante</a>
-            <a href="#">Area dos Pais</a>
-            <a href="#">Contato</a>
-            <a href="#">Mátricula</a>
-        </div>
+        <ul class="opcaoDoUsuario">
+            <li><a href="#">Estudante</a></li>
+            <li><a href="#">Área dos Pais</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Matricula</a></li>
+        </ul>
+        <img src="https://payload.cargocollective.com/1/8/264759/5939318/prt_1373066429.jpg" alt="Escola Mundial" width="50" height="50">
+    <nav class="setores">
+        <a href="#">Home</a>
+        <a href="#">Admissão</a>
+        <a href="#">Calendario</a>
+        <a href="#">Professores</a>
+        <a href="#">Galeria</a>
+        <a href="#">Comunicados</a>
+        <a href="#">Carreira</a>
+        <a href="#">Sobre nós</a>
+    </nav>
     </header>
+
     <section class="banner">
         <div class="banner-slider">
             <p>Banner</p>
-            <p>O josé sempre esteve certo (Seria bacana colocar uma imagem aqui que desse para girar para o lado)</p>
-            <img src="banner" alt="Banner">
-        </div>
-        <div class="Comunicados">
-            <h3>Comunicados e Noticias</h3>
-            <ul>
-                <li>José ataca novamente</li>
-                <li>Cirilo</li>
-                <li>Provas para proxima semana</li>
-            </ul>
+            <p>O José sempre esteve certo (Seria bacana colocar uma imagem aqui que desse para girar para o lado)</p>
+            <img src="banner" alt="Banner" width="200px">
+
+            <div class="Comunicados">
+                <h3>Comunicados e Notícias</h3>
+                <ul>
+                    <li>José ataca novamente</li>
+                    <li>Cirilo</li>
+                    <li>Provas para próxima semana</li>
+                </ul>
+            </div>
         </div>
     </section>
+
     <section class="boasvindas">
-        <div class="boasvindas-texto">
+        <div id="boasvindas-texto">
             <h2>Seja Bem-vindo!</h2>
+            <p>Texto de boas-vindas da escola.</p>
         </div>
-        <div class="redes-sociais">
+        <aside id="redes-sociais">
             <h3>Redes Sociais da Escola</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-        </div>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </aside>
     </section>
     <!-- Lembrei da ideia do Gabriel de colocar a imagem dos alunos, acho que ficaria bacana aqui não sei -->
-    <section class="clubes">
+    <section class="clubes"></section>
         <h3>Alunos ou clubes (decidam entre vocês o que colocar aqui)</h3>
         <div class="clube">
             <h4>Clube do Livro ou Maria Joaquina</h4>
@@ -93,13 +99,14 @@
             <img src="https://cdn-icons-png.flaticon.com/512/42/42288.png" alt="Calendario" width="100" height="100">
         </div>
     </section>
+
     <footer>
-        <div class="informação">
+        <div class="informacao">
             <h3>Escola Mundial</h3>
             <img src="" alt="logo da escola">
-            <p>(uma frase da escola aqui)</p>
+            <p>Uma frase da escola aqui</p>
         </div>
-        <div class="link-footer">
+        <div class="link-footer"></div>
             <a href="#">Admissão</a>
             <a href="#">Calendario</a>
             <a href="#">Professores</a>
@@ -112,11 +119,10 @@
             <a href="#">Mátricula Online</a>
         </div>
         <div class="contatos">
-            <p>Rua do carrosel</p>
-            <p>Telefone</p>
+            <p>Rua do Carrossel</p>
+            <p>Telefone: 9999-9999</p>
             <p>Email: escolamundialcarrosel@yahoo.com.br</p>
         </div>
     </footer>
-
 </body>
 </html>

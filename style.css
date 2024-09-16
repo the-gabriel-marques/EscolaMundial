@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #e5f448;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a, .opcaoDoUsuario a {
+    text-decoration: none;
+    color: #a5a3a3;
+    font-weight: bold;
+}
+
+.opcaoDoUsuario {
+    display: flex;
+    gap: 10px;
+}
+
+.opcaoDoUsuario li {
+    margin-left: 10px;
+}
+
+.opcaoDoUsuario li a {
+    display: block;
+    padding: 10px;
+    background: rgb(14, 3, 3);
+}
+
+.banner-slider {
+    position: relative; /* Permite o posicionamento absoluto do Comunicados */
+    padding: 20px;
+    border: 2px solid blue;
+    height: 300px;
+    }
+
+.Comunicados {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px solid red;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.Comunicados h3 {
+    margin-bottom: 10px;
+}
+
+.Comunicados ul {
+    list-style-type: none;
+}
+
+.Comunicados li {
+    margin-bottom: 5px;
+}
+
+.boasvindas {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+#boasvindas-texto {
+    grid-column: 1 / 2;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+#redes-sociais {
+    grid-column: 2 / 3;
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    flex: 1;
+}
