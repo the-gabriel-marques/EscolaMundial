@@ -1,3 +1,16 @@
 :root {
-    --bulma-primary-h: 61deg;
-  }
+  --bulma-primary-h: 45deg;
+  --bulma-primary-l: 49%;
+}
+
+a {
+  color: black;
+}
+
+.navbar-menu{
+  background-image: linear-gradient( to bottom, #ffb70f, #ffed66 );
+}
+
+footer{
+  background-image: linear-gradient( to bottom, #ffb70f, #ffed66 );
+}
