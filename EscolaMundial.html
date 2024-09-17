@@ -28,7 +28,7 @@
     
     <!-- Logo abaixo da navbar -->
     <div class="has-text-centered" style="padding: 20px;">
-        <img src="imagens/logo_escola_mundial_1.jpg" alt="Logo da Escola Mundial" width="250px" height="50" id="logo">
+        <img src="imagens/logoEscolaMundial.png" alt="Logo da Escola Mundial" width="250px" height="50" id="logo">
     </div>
 
     <nav class="navbar is-primary">
@@ -47,6 +47,35 @@
     </nav>
 </header>
 
+    <!-- Botão flutuante e checkbox -->
+    <input type="checkbox" id="toggleSidebar" class="toggle-sidebar">
+
+    <label for="toggleSidebar" class="floating-button">
+        <span class="button is-primary is-large">
+            <img src="imagens/menu-aberto.png" alt="Menu" style="height: 30px; width: 30px;">
+        </span>
+    </label>
+
+    <!-- Barra lateral -->
+    <div id="sidebar" class="sidebar">
+        <label for="toggleSidebar" class="close-sidebar">
+            <span class="button is-danger is-pulled-right" style="margin: 10px;">
+                <i class="fas fa-times"></i>
+            </span>
+        </label>
+        <div class="sidebar-content">
+            <a href="EscolaMundial.html" class="navbar-item">Página Inicial</a>
+            <a href="#" class="navbar-item">Admissão</a>
+            <a href="#" class="navbar-item">Calendário</a>
+            <a href="#" class="navbar-item">Professores</a>
+            <a href="#" class="navbar-item">Galeria</a>
+            <a href="#" class="navbar-item">Comunicados</a>
+            <a href="#" class="navbar-item">Carreira</a>
+            <a href="sobreEscola.html" class="navbar-item">Sobre a Escola</a>
+        </div>
+    </div>
+
+
 
     <!-- Banner e Comunicados -->
     <section class="section">
@@ -61,7 +90,7 @@
                 <div class="box">
                     <h3 class="title is-4">Comunicados e Notícias</h3>
                     <ul>
-                        <li>Festa Junina beneficente dia 23/06</li>
+                        <li>Festa Junina beneficente dia 22/06</li>
                         <br>
                         <img src="imagens/carroselFestaJunina.jpg" alt="Festa Junina na Escola">
                         <br>

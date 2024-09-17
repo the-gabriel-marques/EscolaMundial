@@ -7,6 +7,103 @@ a {
   color: black;
 }
 
+/* Esconder o botão flutuante e a navbar lateral no modo desktop */
+.floating-button,
+#sidebar {
+    display: none;
+}
+
+/* Mostrar o botão flutuante e a navbar lateral no modo responsivo */
+@media only screen and (max-width: 768px) {
+    .floating-button {
+        display: block;
+    }
+
+    /* Ocultar a navbar normal no modo responsivo */
+    .navbar {
+        display: none;
+    }
+
+    /* Exibir a sidebar no modo responsivo quando o checkbox está marcado */
+    .toggle-sidebar:checked ~ #sidebar {
+        display: block;
+        width: 250px;
+    }
+
+    /* Estilizando a sidebar para modo responsivo */
+    #sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: #ffed66;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 999;
+    }
+}
+
+
+/* Esconder checkbox */
+.toggle-sidebar {
+  display: none;
+}
+
+/* Botão flutuante */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.floating-button .button {
+  border-radius: 50%;
+}
+
+/* Barra lateral */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ffed66;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 999;
+  padding-top: 60px;
+}
+
+/* Estilizar o conteúdo da sidebar */
+.sidebar-content {
+  padding: 15px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #ffb70f;
+  color: white;
+}
+
+/* Estilo do botão de fechar */
+.close-sidebar {
+  cursor: pointer;
+}
+
+
+
+
+
 .navbar-menu{
   background-image: linear-gradient( to bottom, #ffb70f, #ffed66 );
 }
